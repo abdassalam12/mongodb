@@ -1,0 +1,17 @@
+[
+{"right_team": "بيراميدز", "left_team": "سيراميكا", "match_time": null, "match_info": "أيمن الكاشف", "dawri": "كأس السوبر المصري"},
+{"right_team": "الرياض", "left_team": "ضمك", "match_time": null, "match_info": "محمد الخامسي", "dawri": "الدوري السعودي"},
+{"right_team": "الرجاء الرياضي", "left_team": "إتحاد طنجة", "match_time": null, "match_info": "محمد العدالي", "dawri": "الدوري المغربي"},
+{"right_team": "الأهلي", "left_team": "فيوتشر", "match_time": null, "match_info": "محمد الشاذلي", "dawri": "كأس السوبر المصري"},
+{"right_team": "شباب المحمدية", "left_team": "نهضة بركان", "match_time": null, "match_info": "المغربية الرياضية", "dawri": "الدوري المغربي"},
+{"right_team": "برايتون", "left_team": "توتنهام", "match_time": null, "match_info": "خالد الحدي", "dawri": "الدوري الانجليزي"},
+{"right_team": "آرسنال", "left_team": "وست هام يونايتد", "match_time": null, "match_info": "حسن العيدروس", "dawri": "الدوري الانجليزي"}
+][
+{"right_team": "بيراميدز", "left_team": "سيراميكا", "match_time": "3:00 PM", "match_info": "أيمن الكاشف", "dawri": "كأس السوبر المصري"},
+{"right_team": "الرياض", "left_team": "ضمك", "match_time": "5:00 PM", "match_info": "محمد الخامسي", "dawri": "الدوري السعودي"},
+{"right_team": "الرجاء الرياضي", "left_team": "إتحاد طنجة", "match_time": "5:00 PM", "match_info": "محمد العدالي", "dawri": "الدوري المغربي"},
+{"right_team": "الأهلي", "left_team": "فيوتشر", "match_time": "8:00 PM", "match_info": "محمد الشاذلي", "dawri": "كأس السوبر المصري"},
+{"right_team": "شباب المحمدية", "left_team": "نهضة بركان", "match_time": "8:00 PM", "match_info": "المغربية الرياضية", "dawri": "الدوري المغربي"},
+{"right_team": "برايتون", "left_team": "توتنهام", "match_time": "9:30 PM", "match_info": "خالد الحدي", "dawri": "الدوري الانجليزي"},
+{"right_team": "آرسنال", "left_team": "وست هام يونايتد", "match_time": "10:15 PM", "match_info": "حسن العيدروس", "dawri": "الدوري الانجليزي"}
+]

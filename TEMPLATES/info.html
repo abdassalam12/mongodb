@@ -1,0 +1,123 @@
+<!-- info.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Match Info</title>
+</head>
+<body>
+    <center>
+    <h1>Click the button to run the spider</h1>
+    <form method="post" action="{% url 'run_spider' %}">
+        {% csrf_token %}
+        <button type="submit">Run Spider</button>
+    </form>
+    <h1>Football Match Information</h1>
+    {% if result_list %}
+    <center>
+            {% for match in result_list %}
+        <div class="all">
+
+           
+                <div class="th"> 
+                    <div class="container">
+                        <div class="first_team"><div class="cont">  <div><img alt="بيراميدز" data-src="" class="hqy-lazy hqy-loaded" height="70" src="{{match.team_logo_src0}}" title="بيراميدز" width="70" loading="lazy"></div><div ><h1>{{ match.left_team }}</h1></div></div></div>
+                        <div class="milieu">
+                            <hr>vs</hr>
+                            <div class = "time">{{ match.match_time }}</div>
+                        </div>
+                        <div class="right_team"><div class="cont"> <div ><h1>{{ match.right_team }}</h1></div> <div><img alt="بيراميدز" data-src="" class="hqy-lazy hqy-loaded" height="70" src="{{match.team_logo_src}}" title="بيراميدز" width="70" loading="lazy"></div></div></div>
+                    </div>
+                    <div class="container1">
+                        <div>{{ match.dawri }}</div>
+                        <div>{{ match.match_info }}</div>
+                        <div></div>
+                        
+                    </div>
+                </div>
+            </div>
+                
+
+
+            {% endfor %}
+    </center>
+    {% else %}
+        <p>No match data found</p>
+    {% endif %}
+
+</center>
+</body>
+<style>
+    .all{
+        display: inline-flex;
+    }
+ .th{
+    position: relative;
+ }
+    .cont{
+        display : grid;
+        grid-template-columns: 100px 100px;
+    }
+    body {
+        background-color: #f4f4f4;
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+
+    form {
+        margin: 20px 0;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .th {
+        padding: 20px;
+        height: 150px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 20px;
+        display: block;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container,
+    .container1 {
+        display: grid;
+        grid-template-columns: 200px 300px 160px;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .container1{
+         padding-top: 40px;
+         text-align: center;
+    }
+    .milieu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .time {
+        font-size: 20px;
+        color: #007bff;
+    }
+</style>
+</html>
